@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Panjang dan Berat"
+        android:text="@string/panjang_dan_berat"
         android:textColor="@color/black"
         android:textSize="@dimen/title_size"/>
     <EditText
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_length"
         android:inputType="number"
-        />
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/et_weight"
@@ -27,12 +27,13 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_weight"
         android:inputType="number"
+        android:autofillHints=""
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kualitas"
+        android:text="@string/kualitas"
         android:textColor="@color/black"
         android:gravity="start"
         android:textSize="@dimen/title_size"/>
@@ -65,7 +66,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jenis Ikan"
+        android:text="@string/jenis_ikan"
         android:textColor="@color/black"
         android:textSize="@dimen/title_size"/>
 
@@ -77,12 +78,12 @@
             android:id="@+id/rb_wild"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Liar"/>
+            android:text="@string/liar"/>
         <RadioButton
             android:id="@+id/rb_cattle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ternak"/>
+            android:text="@string/ternak"/>
     </RadioGroup>
 
     <Button

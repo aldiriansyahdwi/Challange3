@@ -5,15 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.marginBottom
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.challange3.databinding.FragmentThirdBinding
-import kotlinx.android.synthetic.main.fragment_third.*
 
 class ThirdFragment : Fragment() {
 
     private var _binding: FragmentThirdBinding? = null
     private val binding get() = _binding!!
+
+    private val args: ThirdFragmentArgs by navArgs()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,14 +28,14 @@ class ThirdFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val aName = ThirdFragmentArgs.fromBundle(arguments as Bundle).name
+        val aName = args.name
         binding.tvName.visibility = View.VISIBLE
-        binding.tvName.text = "Hello, $aName!"
+        "Hello, $aName!".also { binding.tvName.text = it }
         binding.tvDesc.visibility = View.GONE
         binding.tvPrice.visibility = View.GONE
 
 
-        val objectSalmon = ThirdFragmentArgs.fromBundle(arguments as Bundle).dataSalmon
+        val objectSalmon = args.dataSalmon
 
         if (objectSalmon != null) {
             val salmonLength = objectSalmon.length
@@ -53,9 +55,9 @@ class ThirdFragment : Fragment() {
 
 //            binding.tvName.visibility = View.GONE
             binding.tvDesc.visibility = View.VISIBLE
-            binding.tvDesc.text = "Your Salmon that is $salmonLength cm long and weighs $salmonWeight Kg from $salmonTypeText is: "
+            "Your Salmon that is $salmonLength cm long and weighs $salmonWeight Kg from $salmonTypeText is: ".also { binding.tvDesc.text = it }
             binding.tvPrice.visibility = View.VISIBLE
-            binding.tvPrice.text = "Rp ${salmonPrice?.format(2)}"
+            "Rp ${salmonPrice?.format(2)}".also { binding.tvPrice.text = it }
             binding.btnGotoFourth.visibility = View.GONE
         }
         binding.btnGotoFourth.setOnClickListener {

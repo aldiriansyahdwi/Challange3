@@ -13,4 +13,12 @@
     <string name="cb_text_chewy">Kenyal</string>
     <string name="cb_text_soft">Lembek</string>
     <string name="cb_text_mucus">Berlendir</string>
+    <string name="your_name">Your Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="panjang_dan_berat">Panjang dan Berat</string>
+    <string name="kualitas">Kualitas</string>
+    <string name="jenis_ikan">Jenis Ikan</string>
+    <string name="liar">Liar</string>
+    <string name="ternak">Ternak</string>
 </resources>

@@ -5,20 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
-import androidx.core.view.isNotEmpty
 import androidx.navigation.fragment.findNavController
 import com.example.challange3.databinding.FragmentFourthBinding
 
 class FourthFragment : Fragment() {
 
-    companion object{
-        val OBJECT_SALMON = "OBJECT_SALMON"
-    }
-
     private var _binding: FragmentFourthBinding? = null
     private val binding get() = _binding!!
+
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

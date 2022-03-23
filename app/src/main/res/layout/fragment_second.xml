@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_name"
-        />
+        android:inputType="text"
+        android:autofillHints="name"/>
 
     <Button
         android:id="@+id/btn_goto_third"
