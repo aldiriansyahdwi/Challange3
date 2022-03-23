@@ -1,14 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
     tools:context=".FourthFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Panjang dan Berat"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"/>
+    <EditText
+        android:id="@+id/et_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_length"
+        android:inputType="number"
+        />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_weight"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kualitas"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:textSize="@dimen/title_size"/>
+    <CheckBox
+        android:id="@+id/cb_smell"
+        android:text="@string/cb_text_smell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_eyes"
+        android:text="@string/cb_text_eyes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_chewy"
+        android:text="@string/cb_text_chewy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_soft"
+        android:text="@string/cb_text_soft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_mucus"
+        android:text="@string/cb_text_mucus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Ikan"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"/>
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_wild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liar"/>
+        <RadioButton
+            android:id="@+id/rb_cattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ternak"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_goto_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/button_size"
+        android:text="@string/btn_text2"
+        android:backgroundTint="#52ABEF"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

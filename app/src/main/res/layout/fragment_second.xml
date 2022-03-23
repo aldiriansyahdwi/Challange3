@@ -5,16 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".SecondFragment">
+    tools:context=".SecondFragment"
+    android:layout_marginHorizontal="@dimen/margin_horizontal">
 
     <EditText
         android:id="@+id/et_input_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/vertical_margin"
         android:hint="@string/hint_name"
         />
-
 
     <Button
         android:id="@+id/btn_goto_third"

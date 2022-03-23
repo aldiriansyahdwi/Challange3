@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">Challange 3</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Challenge 3</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="screen_1_title">Screen 1</string>
     <string name="button_text1">Go To Screen 2</string>
     <string name="btn_text2">Go To Screen 3</string>
-    <string name="hint_name">Masukan Nama</string>
+    <string name="hint_name">input Name</string>
+    <string name="btn_text3">Go To Screen 4</string>
+    <string name="hint_length">Input Length</string>
+    <string name="hint_weight">Input Weight</string>
+    <string name="cb_text_smell">Aroma Asin</string>
+    <string name="cb_text_eyes">Mata Bening</string>
+    <string name="cb_text_chewy">Kenyal</string>
+    <string name="cb_text_soft">Lembek</string>
+    <string name="cb_text_mucus">Berlendir</string>
 </resources>

@@ -4,10 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/margin_horizontal"
     android:gravity="center"
     tools:context=".FirstFragment">
-
-
 
     <Button
         android:id="@+id/btn_goto_second"
