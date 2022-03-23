@@ -30,6 +30,7 @@ class FourthFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val aName = FourthFragmentArgs.fromBundle(arguments as Bundle).name
         binding.btnGotoThird.setOnClickListener {
             if(binding.etLength.text.isNullOrEmpty() || binding.etWeight.text.isNullOrEmpty()){
                 Toast.makeText(requireContext(), "Length and Weight cannot empty", Toast.LENGTH_SHORT).show()
@@ -39,8 +40,8 @@ class FourthFragment : Fragment() {
             }
             else {
                 val aSalmon = Salmon(binding.etLength.text.toString().toDouble(), binding.etWeight.text.toString().toDouble(), checkBoxQualityClicked(), radioButtonTypeClicked())
-
                 val actionBackToThirdFragment = FourthFragmentDirections.actionFourthFragmentToThirdFragment(aSalmon)
+                actionBackToThirdFragment.name = aName
                     findNavController().navigate(actionBackToThirdFragment)
             }
         }

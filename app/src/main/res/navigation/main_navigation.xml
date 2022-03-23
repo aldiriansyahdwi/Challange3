@@ -49,5 +49,8 @@
         <action
             android:id="@+id/action_fourthFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
 </navigation>
